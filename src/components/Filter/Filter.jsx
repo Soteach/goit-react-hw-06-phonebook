@@ -1,5 +1,4 @@
 import { useDispatch, useSelector } from 'react-redux';
-
 import { filterSlice, getFilter } from 'redux/filerSlice';
 import { Title, FilterContainer } from './Filter.styled';
 
