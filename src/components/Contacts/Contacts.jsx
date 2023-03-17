@@ -18,22 +18,20 @@ const ListOfContacts = () => {
   });
 
   return (
-    <div>
-      <ContactList>
-        {listToRender.map(({ id, name, number }) => {
-          return (
-            <List key={id}>
-              <span>
-                {name}: {number}
-              </span>
-              <DelBtn type="button" onClick={() => contactDeleter(id)}>
-                Delete
-              </DelBtn>
-            </List>
-          );
-        })}
-      </ContactList>
-    </div>
+    <ContactList>
+      {listToRender.map(({ id, name, number }) => {
+        return (
+          <List key={id}>
+            <span>
+              {name}: {number}
+            </span>
+            <DelBtn type="button" onClick={() => contactDeleter(id)}>
+              Delete
+            </DelBtn>
+          </List>
+        );
+      })}
+    </ContactList>
   );
 };
 
